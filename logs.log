@@ -1,0 +1,887 @@
+App 17209 output: node:internal/modules/cjs/loader:1228
+App 17209 output:   throw err;
+App 17209 output:   ^
+App 17209 output: Error: Cannot find module 'express'
+App 17209 output: Require stack:
+App 17209 output: - /home/sslineu1/auth.server.ssline.uz/index.js
+App 17209 output: - /opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js
+App 17209 output:     at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+App 17209 output:     at Module._load (node:internal/modules/cjs/loader:1051:27)
+App 17209 output:     at Module.require (node:internal/modules/cjs/loader:1311:19)
+App 17209 output:     at Module.require (/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js:80:25)
+App 17209 output:     at require (node:internal/modules/helpers:179:18)
+App 17209 output:     at Object.<anonymous> (/home/sslineu1/auth.server.ssline.uz/index.js:1:17)
+App 17209 output:     at Module._compile (node:internal/modules/cjs/loader:1469:14)
+App 17209 output:     at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+App 17209 output:     at Module.load (node:internal/modules/cjs/loader:1288:32)
+App 17209 output:     at Module._load (node:internal/modules/cjs/loader:1104:12) {
+App 17209 output:   code: 'MODULE_NOT_FOUND',
+App 17209 output:   requireStack: [
+App 17209 output:     '/home/sslineu1/auth.server.ssline.uz/index.js',
+App 17209 output:     '/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js'
+App 17209 output:   ]
+App 17209 output: }
+App 17209 output: Node.js v20.18.3
+App 22698 output: Ошибка подключения: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 22698 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 22698 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 22698 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 22698 output:     at Connection.emit (node:events:518:28)
+App 22698 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 22698 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 22698 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 22698 output:     at Socket.emit (node:events:518:28)
+App 22698 output:     at addChunk (node:internal/streams/readable:561:12)
+App 22698 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 22698 output:   parent: error: password authentication failed for user "postgres"
+App 22698 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 22698 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 22698 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 22698 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 22698 output:       at Socket.emit (node:events:518:28)
+App 22698 output:       at addChunk (node:internal/streams/readable:561:12)
+App 22698 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 22698 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 22698 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 22698 output:     length: 97,
+App 22698 output:     severity: 'FATAL',
+App 22698 output:     code: '28P01',
+App 22698 output:     detail: undefined,
+App 22698 output:     hint: undefined,
+App 22698 output:     position: undefined,
+App 22698 output:     internalPosition: undefined,
+App 22698 output:     internalQuery: undefined,
+App 22698 output:     where: undefined,
+App 22698 output:     schema: undefined,
+App 22698 output:     table: undefined,
+App 22698 output:     column: undefined,
+App 22698 output:     dataType: undefined,
+App 22698 output:     constraint: undefined,
+App 22698 output:     file: 'auth.c',
+App 22698 output:     line: '305',
+App 22698 output:     routine: 'auth_failed'
+App 22698 output:   },
+App 22698 output:   original: error: password authentication failed for user "postgres"
+App 22698 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 22698 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 22698 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 22698 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 22698 output:       at Socket.emit (node:events:518:28)
+App 22698 output:       at addChunk (node:internal/streams/readable:561:12)
+App 22698 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 22698 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 22698 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 22698 output:     length: 97,
+App 22698 output:     severity: 'FATAL',
+App 22698 output:     code: '28P01',
+App 22698 output:     detail: undefined,
+App 22698 output:     hint: undefined,
+App 22698 output:     position: undefined,
+App 22698 output:     internalPosition: undefined,
+App 22698 output:     internalQuery: undefined,
+App 22698 output:     where: undefined,
+App 22698 output:     schema: undefined,
+App 22698 output:     table: undefined,
+App 22698 output:     column: undefined,
+App 22698 output:     dataType: undefined,
+App 22698 output:     constraint: undefined,
+App 22698 output:     file: 'auth.c',
+App 22698 output:     line: '305',
+App 22698 output:     routine: 'auth_failed'
+App 22698 output:   }
+App 22698 output: }
+App 22698 output: Ошибка запуска сервера: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 22698 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 22698 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 22698 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 22698 output:     at Connection.emit (node:events:518:28)
+App 22698 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 22698 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 22698 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 22698 output:     at Socket.emit (node:events:518:28)
+App 22698 output:     at addChunk (node:internal/streams/readable:561:12)
+App 22698 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 22698 output:   parent: error: password authentication failed for user "postgres"
+App 22698 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 22698 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 22698 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 22698 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 22698 output:       at Socket.emit (node:events:518:28)
+App 22698 output:       at addChunk (node:internal/streams/readable:561:12)
+App 22698 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 22698 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 22698 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 22698 output:     length: 97,
+App 22698 output:     severity: 'FATAL',
+App 22698 output:     code: '28P01',
+App 22698 output:     detail: undefined,
+App 22698 output:     hint: undefined,
+App 22698 output:     position: undefined,
+App 22698 output:     internalPosition: undefined,
+App 22698 output:     internalQuery: undefined,
+App 22698 output:     where: undefined,
+App 22698 output:     schema: undefined,
+App 22698 output:     table: undefined,
+App 22698 output:     column: undefined,
+App 22698 output:     dataType: undefined,
+App 22698 output:     constraint: undefined,
+App 22698 output:     file: 'auth.c',
+App 22698 output:     line: '305',
+App 22698 output:     routine: 'auth_failed'
+App 22698 output:   },
+App 22698 output:   original: error: password authentication failed for user "postgres"
+App 22698 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 22698 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 22698 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 22698 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 22698 output:       at Socket.emit (node:events:518:28)
+App 22698 output:       at addChunk (node:internal/streams/readable:561:12)
+App 22698 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 22698 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 22698 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 22698 output:     length: 97,
+App 22698 output:     severity: 'FATAL',
+App 22698 output:     code: '28P01',
+App 22698 output:     detail: undefined,
+App 22698 output:     hint: undefined,
+App 22698 output:     position: undefined,
+App 22698 output:     internalPosition: undefined,
+App 22698 output:     internalQuery: undefined,
+App 22698 output:     where: undefined,
+App 22698 output:     schema: undefined,
+App 22698 output:     table: undefined,
+App 22698 output:     column: undefined,
+App 22698 output:     dataType: undefined,
+App 22698 output:     constraint: undefined,
+App 22698 output:     file: 'auth.c',
+App 22698 output:     line: '305',
+App 22698 output:     routine: 'auth_failed'
+App 22698 output:   }
+App 22698 output: }
+App 53939 output: Ошибка подключения: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 53939 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 53939 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 53939 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 53939 output:     at Connection.emit (node:events:518:28)
+App 53939 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 53939 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 53939 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 53939 output:     at Socket.emit (node:events:518:28)
+App 53939 output:     at addChunk (node:internal/streams/readable:561:12)
+App 53939 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 53939 output:   parent: error: password authentication failed for user "postgres"
+App 53939 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 53939 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 53939 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 53939 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 53939 output:       at Socket.emit (node:events:518:28)
+App 53939 output:       at addChunk (node:internal/streams/readable:561:12)
+App 53939 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 53939 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 53939 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 53939 output:     length: 97,
+App 53939 output:     severity: 'FATAL',
+App 53939 output:     code: '28P01',
+App 53939 output:     detail: undefined,
+App 53939 output:     hint: undefined,
+App 53939 output:     position: undefined,
+App 53939 output:     internalPosition: undefined,
+App 53939 output:     internalQuery: undefined,
+App 53939 output:     where: undefined,
+App 53939 output:     schema: undefined,
+App 53939 output:     table: undefined,
+App 53939 output:     column: undefined,
+App 53939 output:     dataType: undefined,
+App 53939 output:     constraint: undefined,
+App 53939 output:     file: 'auth.c',
+App 53939 output:     line: '305',
+App 53939 output:     routine: 'auth_failed'
+App 53939 output:   },
+App 53939 output:   original: error: password authentication failed for user "postgres"
+App 53939 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 53939 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 53939 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 53939 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 53939 output:       at Socket.emit (node:events:518:28)
+App 53939 output:       at addChunk (node:internal/streams/readable:561:12)
+App 53939 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 53939 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 53939 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 53939 output:     length: 97,
+App 53939 output:     severity: 'FATAL',
+App 53939 output:     code: '28P01',
+App 53939 output:     detail: undefined,
+App 53939 output:     hint: undefined,
+App 53939 output:     position: undefined,
+App 53939 output:     internalPosition: undefined,
+App 53939 output:     internalQuery: undefined,
+App 53939 output:     where: undefined,
+App 53939 output:     schema: undefined,
+App 53939 output:     table: undefined,
+App 53939 output:     column: undefined,
+App 53939 output:     dataType: undefined,
+App 53939 output:     constraint: undefined,
+App 53939 output:     file: 'auth.c',
+App 53939 output:     line: '305',
+App 53939 output:     routine: 'auth_failed'
+App 53939 output:   }
+App 53939 output: }
+App 53939 output: Ошибка запуска сервера: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 53939 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 53939 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 53939 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 53939 output:     at Connection.emit (node:events:518:28)
+App 53939 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 53939 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 53939 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 53939 output:     at Socket.emit (node:events:518:28)
+App 53939 output:     at addChunk (node:internal/streams/readable:561:12)
+App 53939 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 53939 output:   parent: error: password authentication failed for user "postgres"
+App 53939 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 53939 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 53939 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 53939 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 53939 output:       at Socket.emit (node:events:518:28)
+App 53939 output:       at addChunk (node:internal/streams/readable:561:12)
+App 53939 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 53939 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 53939 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 53939 output:     length: 97,
+App 53939 output:     severity: 'FATAL',
+App 53939 output:     code: '28P01',
+App 53939 output:     detail: undefined,
+App 53939 output:     hint: undefined,
+App 53939 output:     position: undefined,
+App 53939 output:     internalPosition: undefined,
+App 53939 output:     internalQuery: undefined,
+App 53939 output:     where: undefined,
+App 53939 output:     schema: undefined,
+App 53939 output:     table: undefined,
+App 53939 output:     column: undefined,
+App 53939 output:     dataType: undefined,
+App 53939 output:     constraint: undefined,
+App 53939 output:     file: 'auth.c',
+App 53939 output:     line: '305',
+App 53939 output:     routine: 'auth_failed'
+App 53939 output:   },
+App 53939 output:   original: error: password authentication failed for user "postgres"
+App 53939 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 53939 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 53939 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 53939 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 53939 output:       at Socket.emit (node:events:518:28)
+App 53939 output:       at addChunk (node:internal/streams/readable:561:12)
+App 53939 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 53939 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 53939 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 53939 output:     length: 97,
+App 53939 output:     severity: 'FATAL',
+App 53939 output:     code: '28P01',
+App 53939 output:     detail: undefined,
+App 53939 output:     hint: undefined,
+App 53939 output:     position: undefined,
+App 53939 output:     internalPosition: undefined,
+App 53939 output:     internalQuery: undefined,
+App 53939 output:     where: undefined,
+App 53939 output:     schema: undefined,
+App 53939 output:     table: undefined,
+App 53939 output:     column: undefined,
+App 53939 output:     dataType: undefined,
+App 53939 output:     constraint: undefined,
+App 53939 output:     file: 'auth.c',
+App 53939 output:     line: '305',
+App 53939 output:     routine: 'auth_failed'
+App 53939 output:   }
+App 53939 output: }
+App 12888 output: Ошибка подключения: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 12888 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 12888 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 12888 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 12888 output:     at Connection.emit (node:events:518:28)
+App 12888 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 12888 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 12888 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12888 output:     at Socket.emit (node:events:518:28)
+App 12888 output:     at addChunk (node:internal/streams/readable:561:12)
+App 12888 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 12888 output:   parent: error: password authentication failed for user "postgres"
+App 12888 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12888 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12888 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12888 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12888 output:       at Socket.emit (node:events:518:28)
+App 12888 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12888 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12888 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12888 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12888 output:     length: 97,
+App 12888 output:     severity: 'FATAL',
+App 12888 output:     code: '28P01',
+App 12888 output:     detail: undefined,
+App 12888 output:     hint: undefined,
+App 12888 output:     position: undefined,
+App 12888 output:     internalPosition: undefined,
+App 12888 output:     internalQuery: undefined,
+App 12888 output:     where: undefined,
+App 12888 output:     schema: undefined,
+App 12888 output:     table: undefined,
+App 12888 output:     column: undefined,
+App 12888 output:     dataType: undefined,
+App 12888 output:     constraint: undefined,
+App 12888 output:     file: 'auth.c',
+App 12888 output:     line: '305',
+App 12888 output:     routine: 'auth_failed'
+App 12888 output:   },
+App 12888 output:   original: error: password authentication failed for user "postgres"
+App 12888 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12888 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12888 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12888 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12888 output:       at Socket.emit (node:events:518:28)
+App 12888 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12888 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12888 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12888 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12888 output:     length: 97,
+App 12888 output:     severity: 'FATAL',
+App 12888 output:     code: '28P01',
+App 12888 output:     detail: undefined,
+App 12888 output:     hint: undefined,
+App 12888 output:     position: undefined,
+App 12888 output:     internalPosition: undefined,
+App 12888 output:     internalQuery: undefined,
+App 12888 output:     where: undefined,
+App 12888 output:     schema: undefined,
+App 12888 output:     table: undefined,
+App 12888 output:     column: undefined,
+App 12888 output:     dataType: undefined,
+App 12888 output:     constraint: undefined,
+App 12888 output:     file: 'auth.c',
+App 12888 output:     line: '305',
+App 12888 output:     routine: 'auth_failed'
+App 12888 output:   }
+App 12888 output: }
+App 12888 output: Ошибка запуска сервера: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 12888 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 12888 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 12888 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 12888 output:     at Connection.emit (node:events:518:28)
+App 12888 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 12888 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 12888 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12888 output:     at Socket.emit (node:events:518:28)
+App 12888 output:     at addChunk (node:internal/streams/readable:561:12)
+App 12888 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 12888 output:   parent: error: password authentication failed for user "postgres"
+App 12888 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12888 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12888 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12888 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12888 output:       at Socket.emit (node:events:518:28)
+App 12888 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12888 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12888 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12888 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12888 output:     length: 97,
+App 12888 output:     severity: 'FATAL',
+App 12888 output:     code: '28P01',
+App 12888 output:     detail: undefined,
+App 12888 output:     hint: undefined,
+App 12888 output:     position: undefined,
+App 12888 output:     internalPosition: undefined,
+App 12888 output:     internalQuery: undefined,
+App 12888 output:     where: undefined,
+App 12888 output:     schema: undefined,
+App 12888 output:     table: undefined,
+App 12888 output:     column: undefined,
+App 12888 output:     dataType: undefined,
+App 12888 output:     constraint: undefined,
+App 12888 output:     file: 'auth.c',
+App 12888 output:     line: '305',
+App 12888 output:     routine: 'auth_failed'
+App 12888 output:   },
+App 12888 output:   original: error: password authentication failed for user "postgres"
+App 12888 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12888 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12888 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12888 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12888 output:       at Socket.emit (node:events:518:28)
+App 12888 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12888 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12888 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12888 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12888 output:     length: 97,
+App 12888 output:     severity: 'FATAL',
+App 12888 output:     code: '28P01',
+App 12888 output:     detail: undefined,
+App 12888 output:     hint: undefined,
+App 12888 output:     position: undefined,
+App 12888 output:     internalPosition: undefined,
+App 12888 output:     internalQuery: undefined,
+App 12888 output:     where: undefined,
+App 12888 output:     schema: undefined,
+App 12888 output:     table: undefined,
+App 12888 output:     column: undefined,
+App 12888 output:     dataType: undefined,
+App 12888 output:     constraint: undefined,
+App 12888 output:     file: 'auth.c',
+App 12888 output:     line: '305',
+App 12888 output:     routine: 'auth_failed'
+App 12888 output:   }
+App 12888 output: }
+App 12079 output: Ошибка подключения: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 12079 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 12079 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 12079 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 12079 output:     at Connection.emit (node:events:518:28)
+App 12079 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 12079 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 12079 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12079 output:     at Socket.emit (node:events:518:28)
+App 12079 output:     at addChunk (node:internal/streams/readable:561:12)
+App 12079 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 12079 output:   parent: error: password authentication failed for user "postgres"
+App 12079 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12079 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12079 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12079 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12079 output:       at Socket.emit (node:events:518:28)
+App 12079 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12079 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12079 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12079 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12079 output:     length: 97,
+App 12079 output:     severity: 'FATAL',
+App 12079 output:     code: '28P01',
+App 12079 output:     detail: undefined,
+App 12079 output:     hint: undefined,
+App 12079 output:     position: undefined,
+App 12079 output:     internalPosition: undefined,
+App 12079 output:     internalQuery: undefined,
+App 12079 output:     where: undefined,
+App 12079 output:     schema: undefined,
+App 12079 output:     table: undefined,
+App 12079 output:     column: undefined,
+App 12079 output:     dataType: undefined,
+App 12079 output:     constraint: undefined,
+App 12079 output:     file: 'auth.c',
+App 12079 output:     line: '305',
+App 12079 output:     routine: 'auth_failed'
+App 12079 output:   },
+App 12079 output:   original: error: password authentication failed for user "postgres"
+App 12079 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12079 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12079 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12079 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12079 output:       at Socket.emit (node:events:518:28)
+App 12079 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12079 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12079 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12079 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12079 output:     length: 97,
+App 12079 output:     severity: 'FATAL',
+App 12079 output:     code: '28P01',
+App 12079 output:     detail: undefined,
+App 12079 output:     hint: undefined,
+App 12079 output:     position: undefined,
+App 12079 output:     internalPosition: undefined,
+App 12079 output:     internalQuery: undefined,
+App 12079 output:     where: undefined,
+App 12079 output:     schema: undefined,
+App 12079 output:     table: undefined,
+App 12079 output:     column: undefined,
+App 12079 output:     dataType: undefined,
+App 12079 output:     constraint: undefined,
+App 12079 output:     file: 'auth.c',
+App 12079 output:     line: '305',
+App 12079 output:     routine: 'auth_failed'
+App 12079 output:   }
+App 12079 output: }
+App 12079 output: Ошибка запуска сервера: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 12079 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 12079 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 12079 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 12079 output:     at Connection.emit (node:events:518:28)
+App 12079 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 12079 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 12079 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12079 output:     at Socket.emit (node:events:518:28)
+App 12079 output:     at addChunk (node:internal/streams/readable:561:12)
+App 12079 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 12079 output:   parent: error: password authentication failed for user "postgres"
+App 12079 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12079 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12079 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12079 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12079 output:       at Socket.emit (node:events:518:28)
+App 12079 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12079 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12079 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12079 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12079 output:     length: 97,
+App 12079 output:     severity: 'FATAL',
+App 12079 output:     code: '28P01',
+App 12079 output:     detail: undefined,
+App 12079 output:     hint: undefined,
+App 12079 output:     position: undefined,
+App 12079 output:     internalPosition: undefined,
+App 12079 output:     internalQuery: undefined,
+App 12079 output:     where: undefined,
+App 12079 output:     schema: undefined,
+App 12079 output:     table: undefined,
+App 12079 output:     column: undefined,
+App 12079 output:     dataType: undefined,
+App 12079 output:     constraint: undefined,
+App 12079 output:     file: 'auth.c',
+App 12079 output:     line: '305',
+App 12079 output:     routine: 'auth_failed'
+App 12079 output:   },
+App 12079 output:   original: error: password authentication failed for user "postgres"
+App 12079 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 12079 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 12079 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 12079 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 12079 output:       at Socket.emit (node:events:518:28)
+App 12079 output:       at addChunk (node:internal/streams/readable:561:12)
+App 12079 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 12079 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 12079 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 12079 output:     length: 97,
+App 12079 output:     severity: 'FATAL',
+App 12079 output:     code: '28P01',
+App 12079 output:     detail: undefined,
+App 12079 output:     hint: undefined,
+App 12079 output:     position: undefined,
+App 12079 output:     internalPosition: undefined,
+App 12079 output:     internalQuery: undefined,
+App 12079 output:     where: undefined,
+App 12079 output:     schema: undefined,
+App 12079 output:     table: undefined,
+App 12079 output:     column: undefined,
+App 12079 output:     dataType: undefined,
+App 12079 output:     constraint: undefined,
+App 12079 output:     file: 'auth.c',
+App 12079 output:     line: '305',
+App 12079 output:     routine: 'auth_failed'
+App 12079 output:   }
+App 12079 output: }
+App 62011 output: Ошибка подключения: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 62011 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 62011 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 62011 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 62011 output:     at Connection.emit (node:events:518:28)
+App 62011 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 62011 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 62011 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 62011 output:     at Socket.emit (node:events:518:28)
+App 62011 output:     at addChunk (node:internal/streams/readable:561:12)
+App 62011 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 62011 output:   parent: error: password authentication failed for user "postgres"
+App 62011 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 62011 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 62011 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 62011 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 62011 output:       at Socket.emit (node:events:518:28)
+App 62011 output:       at addChunk (node:internal/streams/readable:561:12)
+App 62011 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 62011 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 62011 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 62011 output:     length: 97,
+App 62011 output:     severity: 'FATAL',
+App 62011 output:     code: '28P01',
+App 62011 output:     detail: undefined,
+App 62011 output:     hint: undefined,
+App 62011 output:     position: undefined,
+App 62011 output:     internalPosition: undefined,
+App 62011 output:     internalQuery: undefined,
+App 62011 output:     where: undefined,
+App 62011 output:     schema: undefined,
+App 62011 output:     table: undefined,
+App 62011 output:     column: undefined,
+App 62011 output:     dataType: undefined,
+App 62011 output:     constraint: undefined,
+App 62011 output:     file: 'auth.c',
+App 62011 output:     line: '305',
+App 62011 output:     routine: 'auth_failed'
+App 62011 output:   },
+App 62011 output:   original: error: password authentication failed for user "postgres"
+App 62011 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 62011 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 62011 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 62011 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 62011 output:       at Socket.emit (node:events:518:28)
+App 62011 output:       at addChunk (node:internal/streams/readable:561:12)
+App 62011 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 62011 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 62011 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 62011 output:     length: 97,
+App 62011 output:     severity: 'FATAL',
+App 62011 output:     code: '28P01',
+App 62011 output:     detail: undefined,
+App 62011 output:     hint: undefined,
+App 62011 output:     position: undefined,
+App 62011 output:     internalPosition: undefined,
+App 62011 output:     internalQuery: undefined,
+App 62011 output:     where: undefined,
+App 62011 output:     schema: undefined,
+App 62011 output:     table: undefined,
+App 62011 output:     column: undefined,
+App 62011 output:     dataType: undefined,
+App 62011 output:     constraint: undefined,
+App 62011 output:     file: 'auth.c',
+App 62011 output:     line: '305',
+App 62011 output:     routine: 'auth_failed'
+App 62011 output:   }
+App 62011 output: }
+App 62011 output: Ошибка запуска сервера: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 62011 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 62011 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 62011 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 62011 output:     at Connection.emit (node:events:518:28)
+App 62011 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 62011 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 62011 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 62011 output:     at Socket.emit (node:events:518:28)
+App 62011 output:     at addChunk (node:internal/streams/readable:561:12)
+App 62011 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 62011 output:   parent: error: password authentication failed for user "postgres"
+App 62011 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 62011 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 62011 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 62011 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 62011 output:       at Socket.emit (node:events:518:28)
+App 62011 output:       at addChunk (node:internal/streams/readable:561:12)
+App 62011 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 62011 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 62011 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 62011 output:     length: 97,
+App 62011 output:     severity: 'FATAL',
+App 62011 output:     code: '28P01',
+App 62011 output:     detail: undefined,
+App 62011 output:     hint: undefined,
+App 62011 output:     position: undefined,
+App 62011 output:     internalPosition: undefined,
+App 62011 output:     internalQuery: undefined,
+App 62011 output:     where: undefined,
+App 62011 output:     schema: undefined,
+App 62011 output:     table: undefined,
+App 62011 output:     column: undefined,
+App 62011 output:     dataType: undefined,
+App 62011 output:     constraint: undefined,
+App 62011 output:     file: 'auth.c',
+App 62011 output:     line: '305',
+App 62011 output:     routine: 'auth_failed'
+App 62011 output:   },
+App 62011 output:   original: error: password authentication failed for user "postgres"
+App 62011 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 62011 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 62011 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 62011 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 62011 output:       at Socket.emit (node:events:518:28)
+App 62011 output:       at addChunk (node:internal/streams/readable:561:12)
+App 62011 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 62011 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 62011 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 62011 output:     length: 97,
+App 62011 output:     severity: 'FATAL',
+App 62011 output:     code: '28P01',
+App 62011 output:     detail: undefined,
+App 62011 output:     hint: undefined,
+App 62011 output:     position: undefined,
+App 62011 output:     internalPosition: undefined,
+App 62011 output:     internalQuery: undefined,
+App 62011 output:     where: undefined,
+App 62011 output:     schema: undefined,
+App 62011 output:     table: undefined,
+App 62011 output:     column: undefined,
+App 62011 output:     dataType: undefined,
+App 62011 output:     constraint: undefined,
+App 62011 output:     file: 'auth.c',
+App 62011 output:     line: '305',
+App 62011 output:     routine: 'auth_failed'
+App 62011 output:   }
+App 62011 output: }
+App 16247 output: Ошибка подключения: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 16247 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 16247 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 16247 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 16247 output:     at Connection.emit (node:events:518:28)
+App 16247 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 16247 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 16247 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 16247 output:     at Socket.emit (node:events:518:28)
+App 16247 output:     at addChunk (node:internal/streams/readable:561:12)
+App 16247 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 16247 output:   parent: error: password authentication failed for user "postgres"
+App 16247 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 16247 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 16247 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 16247 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 16247 output:       at Socket.emit (node:events:518:28)
+App 16247 output:       at addChunk (node:internal/streams/readable:561:12)
+App 16247 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 16247 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 16247 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 16247 output:     length: 97,
+App 16247 output:     severity: 'FATAL',
+App 16247 output:     code: '28P01',
+App 16247 output:     detail: undefined,
+App 16247 output:     hint: undefined,
+App 16247 output:     position: undefined,
+App 16247 output:     internalPosition: undefined,
+App 16247 output:     internalQuery: undefined,
+App 16247 output:     where: undefined,
+App 16247 output:     schema: undefined,
+App 16247 output:     table: undefined,
+App 16247 output:     column: undefined,
+App 16247 output:     dataType: undefined,
+App 16247 output:     constraint: undefined,
+App 16247 output:     file: 'auth.c',
+App 16247 output:     line: '305',
+App 16247 output:     routine: 'auth_failed'
+App 16247 output:   },
+App 16247 output:   original: error: password authentication failed for user "postgres"
+App 16247 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 16247 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 16247 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 16247 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 16247 output:       at Socket.emit (node:events:518:28)
+App 16247 output:       at addChunk (node:internal/streams/readable:561:12)
+App 16247 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 16247 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 16247 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 16247 output:     length: 97,
+App 16247 output:     severity: 'FATAL',
+App 16247 output:     code: '28P01',
+App 16247 output:     detail: undefined,
+App 16247 output:     hint: undefined,
+App 16247 output:     position: undefined,
+App 16247 output:     internalPosition: undefined,
+App 16247 output:     internalQuery: undefined,
+App 16247 output:     where: undefined,
+App 16247 output:     schema: undefined,
+App 16247 output:     table: undefined,
+App 16247 output:     column: undefined,
+App 16247 output:     dataType: undefined,
+App 16247 output:     constraint: undefined,
+App 16247 output:     file: 'auth.c',
+App 16247 output:     line: '305',
+App 16247 output:     routine: 'auth_failed'
+App 16247 output:   }
+App 16247 output: }
+App 16247 output: Ошибка запуска сервера: ConnectionError [SequelizeConnectionError]: password authentication failed for user "postgres"
+App 16247 output:     at Client._connectionCallback (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)
+App 16247 output:     at Client._handleErrorWhileConnecting (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:336:19)
+App 16247 output:     at Client._handleErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/client.js:356:19)
+App 16247 output:     at Connection.emit (node:events:518:28)
+App 16247 output:     at /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg/lib/connection.js:116:12
+App 16247 output:     at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:36:17)
+App 16247 output:     at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 16247 output:     at Socket.emit (node:events:518:28)
+App 16247 output:     at addChunk (node:internal/streams/readable:561:12)
+App 16247 output:     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3) {
+App 16247 output:   parent: error: password authentication failed for user "postgres"
+App 16247 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 16247 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 16247 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 16247 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 16247 output:       at Socket.emit (node:events:518:28)
+App 16247 output:       at addChunk (node:internal/streams/readable:561:12)
+App 16247 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 16247 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 16247 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 16247 output:     length: 97,
+App 16247 output:     severity: 'FATAL',
+App 16247 output:     code: '28P01',
+App 16247 output:     detail: undefined,
+App 16247 output:     hint: undefined,
+App 16247 output:     position: undefined,
+App 16247 output:     internalPosition: undefined,
+App 16247 output:     internalQuery: undefined,
+App 16247 output:     where: undefined,
+App 16247 output:     schema: undefined,
+App 16247 output:     table: undefined,
+App 16247 output:     column: undefined,
+App 16247 output:     dataType: undefined,
+App 16247 output:     constraint: undefined,
+App 16247 output:     file: 'auth.c',
+App 16247 output:     line: '305',
+App 16247 output:     routine: 'auth_failed'
+App 16247 output:   },
+App 16247 output:   original: error: password authentication failed for user "postgres"
+App 16247 output:       at Parser.parseErrorMessage (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:285:98)
+App 16247 output:       at Parser.handlePacket (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:122:29)
+App 16247 output:       at Parser.parse (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/parser.js:35:38)
+App 16247 output:       at Socket.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/pg-protocol/dist/index.js:11:42)
+App 16247 output:       at Socket.emit (node:events:518:28)
+App 16247 output:       at addChunk (node:internal/streams/readable:561:12)
+App 16247 output:       at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+App 16247 output:       at Readable.push (node:internal/streams/readable:392:5)
+App 16247 output:       at TCP.onStreamRead (node:internal/stream_base_commons:191:23) {
+App 16247 output:     length: 97,
+App 16247 output:     severity: 'FATAL',
+App 16247 output:     code: '28P01',
+App 16247 output:     detail: undefined,
+App 16247 output:     hint: undefined,
+App 16247 output:     position: undefined,
+App 16247 output:     internalPosition: undefined,
+App 16247 output:     internalQuery: undefined,
+App 16247 output:     where: undefined,
+App 16247 output:     schema: undefined,
+App 16247 output:     table: undefined,
+App 16247 output:     column: undefined,
+App 16247 output:     dataType: undefined,
+App 16247 output:     constraint: undefined,
+App 16247 output:     file: 'auth.c',
+App 16247 output:     line: '305',
+App 16247 output:     routine: 'auth_failed'
+App 16247 output:   }
+App 16247 output: }
+App 39254 output: /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:55
+App 39254 output:         throw new Error(`Please install ${moduleName} package manually`);
+App 39254 output:         ^
+App 39254 output: Error: Please install sqlite3 package manually
+App 39254 output:     at ConnectionManager._loadDialectModule (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:55:15)
+App 39254 output:     at new ConnectionManager (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/sqlite/connection-manager.js:18:21)
+App 39254 output:     at new SqliteDialect (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/sqlite/index.js:13:30)
+App 39254 output:     at new Sequelize (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/sequelize.js:194:20)
+App 39254 output:     at Object.<anonymous> (/home/sslineu1/auth.server.ssline.uz/db.js:4:19)
+App 39254 output:     at Module._compile (node:internal/modules/cjs/loader:1469:14)
+App 39254 output:     at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+App 39254 output:     at Module.load (node:internal/modules/cjs/loader:1288:32)
+App 39254 output:     at Module._load (node:internal/modules/cjs/loader:1104:12)
+App 39254 output:     at Module.require (node:internal/modules/cjs/loader:1311:19)
+App 39254 output: Node.js v20.18.3
+App 40736 output: /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:55
+App 40736 output:         throw new Error(`Please install ${moduleName} package manually`);
+App 40736 output:         ^
+App 40736 output: Error: Please install sqlite3 package manually
+App 40736 output:     at ConnectionManager._loadDialectModule (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:55:15)
+App 40736 output:     at new ConnectionManager (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/sqlite/connection-manager.js:18:21)
+App 40736 output:     at new SqliteDialect (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/sqlite/index.js:13:30)
+App 40736 output:     at new Sequelize (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/sequelize.js:194:20)
+App 40736 output:     at Object.<anonymous> (/home/sslineu1/auth.server.ssline.uz/db.js:4:19)
+App 40736 output:     at Module._compile (node:internal/modules/cjs/loader:1469:14)
+App 40736 output:     at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+App 40736 output:     at Module.load (node:internal/modules/cjs/loader:1288:32)
+App 40736 output:     at Module._load (node:internal/modules/cjs/loader:1104:12)
+App 40736 output:     at Module.require (node:internal/modules/cjs/loader:1311:19)
+App 40736 output: Node.js v20.18.3
+App 42487 output: /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:57
+App 42487 output:       throw err;
+App 42487 output:       ^
+App 42487 output: Error: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by /home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sqlite3/build/Release/node_sqlite3.node)
+App 42487 output:     at Module._extensions..node (node:internal/modules/cjs/loader:1586:18)
+App 42487 output:     at Module.load (node:internal/modules/cjs/loader:1288:32)
+App 42487 output:     at Module._load (node:internal/modules/cjs/loader:1104:12)
+App 42487 output:     at Module.require (node:internal/modules/cjs/loader:1311:19)
+App 42487 output:     at Module.require (/opt/cpanel/ea-ruby27/root/usr/share/passenger/helper-scripts/node-loader.js:80:25)
+App 42487 output:     at require (node:internal/modules/helpers:179:18)
+App 42487 output:     at bindings (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/bindings/bindings.js:112:48)
+App 42487 output:     at Object.<anonymous> (/home/sslineu1/nodevenv/auth.server.ssline.uz/20/lib/node_modules/sqlite3/lib/sqlite3-binding.js:1:37)
+App 42487 output:     at Module._compile (node:internal/modules/cjs/loader:1469:14)
+App 42487 output:     at Module._extensions..js (node:internal/modules/cjs/loader:1548:10) {
+App 42487 output:   code: 'ERR_DLOPEN_FAILED'
+App 42487 output: }
+App 42487 output: Node.js v20.18.3
