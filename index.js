@@ -94,7 +94,7 @@ process.on('SIGTERM', async () => {
   try {
     // Prisma doesn't require sync; migrations handle table creation
     console.log('Prisma client connected');
-    app.listen(8000, () => console.log('Сервер запущен на http://localhost:8000'));
+    app.listen(6575, () => console.log('Сервер запущен на http://localhost:8000'));
   } catch (error) {
     console.error('Ошибка запуска сервера:', error);
     await prisma.$disconnect();
